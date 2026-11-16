@@ -50,3 +50,31 @@
 @media(max-width:760px){.header{padding:28px 0 16px}.page-title{font-size:34px}}
 @media(max-width:500px){.header{padding:25px 0 16px}.page-title{font-size:30px;line-height:1.25}.header nav{font-size:11px;margin-top:16px}}
 @media print{.header{padding:0 0 15px;height:auto}.page-title{font-size:22px}}
+
+/* Separate language editions, quiet expertise tags and a compact resume. */
+.header nav{flex-wrap:wrap;gap:10px 24px}
+.language-switch{display:inline-flex;align-items:center;gap:8px;border-left:1px solid var(--line);padding-left:18px}
+.language-switch>a[aria-current="page"]{color:var(--ink);font-weight:600}
+.language-switch>span{color:var(--line)}
+.profile-tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:12px 0 0}
+.profile-tags li{font-size:11px;line-height:1.6;color:var(--body);border:1px solid var(--line);border-radius:3px;padding:2px 6px;max-width:100%;white-space:normal}
+.resume-entry{padding:20px 0 22px}.resume-role{margin-bottom:12px}.resume-body h4{margin-top:16px;margin-bottom:6px}.resume-body ul{margin-top:6px}.resume-body li{margin:4px 0}
+.resume-tech-details{margin:10px 0 8px;font-size:12px}
+.resume-tech-details>summary{color:var(--muted);cursor:pointer;line-height:1.7;list-style:none;display:flex;gap:8px;align-items:baseline}
+.resume-tech-details>summary::-webkit-details-marker{display:none}
+.resume-tech-details>summary:before{content:"+";font-size:14px}
+.resume-tech-details[open]>summary:before{content:"−"}
+.resume-tech-details>summary:hover{color:var(--accent)}
+.resume-tech-details .resume-complexity{margin:12px 0 0}
+html[lang="en"] .intro .quote-main{font-family:Georgia,"Times New Roman",serif;font-size:clamp(23px,2.3vw,29px);line-height:1.65;letter-spacing:0}
+html[lang="en"] .intro .quote-lead{line-height:1.8}
+html[lang="en"] .chapter-summary{line-height:1.65}
+html[lang="en"] .chapter-body{line-height:1.85}
+@media(max-width:599px){.profile-tags{gap:5px;margin-top:10px}.profile-tags li{font-size:10px;padding:2px 5px}.intro .email{margin-top:10px}.header nav{gap:9px 16px}.language-switch{padding-left:12px;gap:7px}.resume-entry{padding:18px 0 20px}.resume-tech-details{font-size:11px}html[lang="en"] .intro .quote-main{font-size:21px}html[lang="en"] .intro .quote-lead{font-size:12px}}
+@media print{.language-switch{display:none}.profile-tags li{font-size:7px;padding:1px 4px}.resume-entry{padding:14px 0 16px}.resume-tech-details>summary{font-size:8px}}
+
+html[lang="en"] .intro #name{letter-spacing:0}
+
+html[lang="en"] .intro .quote-main span{text-wrap:balance}
+
+.chapter-body p.scenario{border-left:2px solid var(--line);padding-left:14px;margin:18px 0;color:var(--body)}@media(max-width:500px){.chapter-body p.scenario{padding-left:11px;margin:16px 0}}
