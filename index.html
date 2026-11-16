@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>陈竞 · 物理 AI 系统</title>
+<meta name="description" content="陈竞，醒物创始人，1991年生，四川广元人。从AI Computing、无人机自主飞行、无图智驾到ADS 4.0，关于物理AI系统、复杂性与不确定性的经历与思考。">
+<meta name="theme-color" content="#fafaf8"><link rel="canonical" href="https://chenjing.net/"><link rel="stylesheet" href="styles.css">
+</head>
+<body><a class="skip" href="#main">跳到正文</a><div class="page">
+<header class="header"><a class="home" href="#main">chenjing.net</a><nav aria-label="主导航"><a href="#journey">经历与思考</a><a href="#resume">详细履历</a></nav></header>
+<main id="main">
+<section class="intro" aria-labelledby="name">
+<div class="hero">
+<figure class="portrait-block"><img class="portrait" src="assets/portrait.jpg" alt="陈竞在冬日雪景中的照片" width="1122" height="1402" fetchpriority="high"><figcaption class="identity"><h1 id="name">陈竞</h1><p class="personal">1991 年生，四川广元人</p><p class="position">Physical AI System Engineer</p><p class="email"><a href="mailto:jchenbr@hotmail.com">jchenbr@hotmail.com</a></p></figcaption></figure>
+<!-- 引言逐字据旧 BP 第 2 页：tmp/people_restore/candidate.pptx；已核对 tmp/people_restore/render/page-02.png。尚未核对晚点原采访截图。 -->
+<figure class="quote-block"><blockquote><p class="quote-lead">“我觉得这个可能是研发的一个本质：</p><p class="quote-main"><span>去想一些</span><span>现实生活中没存在的美好事物，</span><span>然后把它带到这个世界上来。”</span></p></blockquote><figcaption>2021 年</figcaption></figure>
+</div>
+<div class="intro-description">
+<p><span class="year-range">2024—2026 年</span>，担任华为 AI 首席专家，负责 ADS 4.0 和端到端 AI 方案，推动从规则驱动到端到端 AI 的范式转换。<span class="year-range">2016—2024 年</span>，作为大疆车载创始成员，从零创建规控算法部、系统部及智能研发体系，2020 年落地国内首个无图智驾。<span class="year-range">2014—2016 年</span>，在港科大研究有安全保障的无人机自主飞行。<span class="year-range">2010—2014 年</span>，本科就读于哈工大计算机系，并在微软亚洲研究院从事 AI 研究，2013 年开始使用集群和全量维基百科语料训练语言模型。</p>
+<p class="thesis">近期启动创业项目，致力于物理 AI 系统在真实场景中的大规模部署，为人类打开物理世界的无穷可能性。</p>
+</div></section>
+<section class="journey section" id="journey" aria-labelledby="journey-title"><div class="section-heading"><h2 id="journey-title">经历与思考</h2><button class="expand-all" type="button" aria-expanded="false">展开全部</button></div>
+<details class="chapter" id="msra"><summary><span class="chapter-date">2010—2014</span><span class="chapter-summary">哈工大与 MSRA：如何实现 AI Computing 的规模化？</span><span class="toggle" aria-hidden="true"></span></summary><div class="chapter-body">
+<p>本科期间，我们参加了 ACM-ICPC 编程竞赛，关注如何衡量计算效率，以及通过哪些方法，更高效地使用有限的算力。</p>
+<p>2013 年，在微软亚洲研究院（MSRA）围绕语言模型与命名实体识别（NER）开展研究时，我们进一步追问：</p>
+<h3>能否将计算能力转化为可扩展的信息处理能力？</h3>
+<p><strong>能。这就是 AI Computing。</strong></p>
+<p>AI Computing 的规模化，涉及三个核心问题：</p>
+<h4>算力：如何让计算资源可规模化扩展？</h4>
+<p><strong>集群。</strong></p>
+<p>通过集群组织和调度大量节点，让计算资源能够规模化扩展。当时，我们借助约 2,000–3,000 个节点的 Cosmos 集群，开展大规模的数据处理与模型训练。</p>
+<h4>数据：如何让数据可规模化扩展？</h4>
+<p><strong>互联网数据。</strong></p>
+<p>互联网持续积累的自然语言语料，让数据规模能够不断扩展。当时，我们以全量维基百科语料开展语言模型与命名实体识别研究。</p>
+<h4>模型：能力能否随规模增长？</h4>
+<p><strong>神经网络（Neural Network）。</strong></p>
+<p>在当时的探索中，我们发现 SVM、决策树等方法的扩展性并不理想。MLP 则展现出吸收更多数据、学习较统一表征的潜力，减少了对任务特化设计的依赖，也让我们看到了模型能力随数据和计算规模增长的路径。</p>
+<p>我始终致力于让 AI Computing 走入现实，随后将这部分研究成果带入 Robotics 领域，开展机器人研究。</p>
+</div></details>
+<details class="chapter" id="hkust"><summary><span class="chapter-date">2014—2016</span><span class="chapter-summary">港科大 RI：物理世界难在哪里？</span><span class="toggle" aria-hidden="true"></span></summary><div class="chapter-body">
+<p class="chapter-role">2014—2016 · 香港科技大学 Robotics Institute · 全奖硕士</p>
+<p>在港科大，我研究无人机的实时自主规划，希望让它在对世界了解有限的条件下持续飞行，并获得安全保障。这也让我开始思考物理系统中的三个基本问题。</p>
+<h3>物理世界中的系统，相比数字世界难在哪里？</h3>
+<p>核心难点是<strong>不确定性，以及它随时间的传播与累积</strong>。</p>
+<ul>
+<li><strong>动态不确定性</strong>：世界本身就会变化。</li>
+<li><strong>观测不确定性</strong>：传感器测出的距离，可能与真实距离有偏差。</li>
+<li><strong>执行不确定性</strong>：同样的转弯指令，实际转过的角度可能不同。</li>
+<li><strong>时序误差累积</strong>：每一步的小偏差，会影响后续的位置与判断。</li>
+</ul>
+<p>闭上眼睛走直线，就能体会这种困难：每一步都可能偏一点，又缺少视觉观测来纠正，走得越久，越难确认自己在哪里。</p>
+<h3>如何应对多种来源、持续累积的不确定性？</h3>
+<p>核心方法是<strong>用冗余应对不确定性</strong>。</p>
+<ul>
+<li><strong>源头抑制</strong>：选用测量更稳定的传感器、响应更一致的电机。</li>
+<li><strong>信息融合</strong>：通过硬件同步对齐观测时刻，让多路信息协同工作。</li>
+<li><strong>实时控制</strong>：通过高频观测与反馈，及时修正方向和速度。</li>
+</ul>
+<h3>智能的本质是做对决策，如何做到正确决策？</h3>
+<p>决策的核心是<strong>预演不同选择的后果</strong>。</p>
+<ul>
+<li><strong>行动空间</strong>：无人机能转多急、停多快，决定了哪些动作来得及做。</li>
+<li><strong>后果预测</strong>：前进、绕行或减速后，会到哪里、遇到什么、离目标还有多远。</li>
+<li><strong>实时计算</strong>：用有效建模与数据结构，及时推演较远未来的多种影响。</li>
+</ul>
+<p>最终要决定的是<strong>往哪飞、飞多快、何时转向或停下</strong>，让这些选择服务于任务目标。我的判断标准是：<strong>不确定性保持有界，行动能力覆盖这一范围</strong>。</p>
+<h3>研究成果</h3><ul><li>实现具有安全保障的无人机自主飞行研究，并形成相关论文。</li><li>论文 <em>Improving Octree-Based Occupancy Maps using Environment Sparsity with Application to Aerial Robot Navigation</em> 后续入围 ICRA 2017 服务机器人最佳论文奖（Best Service Robotics Paper Award finalist）。<a class="inline-link" href="https://ewh.ieee.org/soc/ras/conf/fullysponsored/icra/2017/www.icra2017.org/conference/awards.html" target="_blank" rel="noopener noreferrer">官方名单 ↗</a></li><li>无人机避障实验设置成为学界事实标准。</li></ul>
+</div></details>
+<details class="chapter" id="dji"><summary><span class="chapter-date">2016—2024</span><span class="chapter-summary">大疆车载：如何在复杂场景和不确定性下做推理决策？</span><span class="toggle" aria-hidden="true"></span></summary><div class="chapter-body">
+<h3>自动驾驶为什么难？</h3>
+<p><strong>不确定性与复杂性：</strong>自动驾驶要解决的是复杂系统中的不确定性问题。</p>
+<p>不确定性来自真实的物理世界：观测可能不完整，其他参与者的行为也无法完全预知。</p>
+<p>复杂性来自驾驶环境中的多类要素及其相互作用。它们不断增加问题的维度，让需要理解和验证的场景组合迅速增长，带来 Bellman 所说的“维度诅咒”：</p>
+<ul>
+<li><strong>静态空间：</strong>道路边界、路面几何、可通行区域。</li>
+<li><strong>语义规则：</strong>车道属性、通行方向、路权。</li>
+<li><strong>动态物体：</strong>车辆、行人，以及它们的运动与交互。</li>
+</ul>
+<h3>无图智驾为什么更难？</h3>
+<p><strong>多一个维度的不确定性：</strong>道路结构本身也变成了需要实时理解和判断的对象。</p>
+<p>依赖高精地图的方案，通常在系统设计中把地图给出的道路结构当作已知条件，相当于消掉了这一维度的不确定性。无图智驾则要在行驶中自行理解道路结构，并面对这种理解可能不完整、不确定的问题。</p>
+<h3>我们怎样应对复杂性？</h3>
+<p><strong>系统架构与工程：</strong>这是我建设研发组织与系统工程体系的基本方法，包含三个部分：</p>
+<ul>
+<li><strong>高内聚低耦合架构：</strong>通过清晰的模块划分与接口，让专业的人在自己的领域发挥能力，减少需要处理的领域外复杂性。在跨领域的结合点，由专门的系统专家负责。</li>
+<li><strong>工程积累：</strong>在清晰分工的基础上，把能力拆成可复用的基本单元，实现能力原子化与接口统一化。通过实际部署和反馈，持续积累 benchmark、测试能力、对问题本质的理解与工程 know-how，让这些积累进入后续研发。</li>
+<li><strong>可靠性冗余：</strong>提前为信息缺失和能力不足准备其他信息来源与应对手段，让系统在局部信息或能力不可用时仍能工作，提高整体可靠性。</li>
+</ul>
+<h3>我们怎样解决无图问题？</h3>
+<p><strong>多元信息融合：</strong>针对无图增加的道路结构不确定性，用三路信息共同推断道路结构：</p>
+<ul>
+<li><strong>车道线观测：</strong>根据车道线的位置和走向，直接判断道路结构。</li>
+<li><strong>其他车辆行为：</strong>车道线被车辆遮挡时，通过周围车辆的行驶轨迹推断道路走向。</li>
+<li><strong>道路边界：</strong>没有清晰车道线、周围也缺少车辆时，通过道路边界判断可通行空间。</li>
+</ul>
+<h3>在充满不确定性的环境里，怎样做对决策？</h3>
+<p><strong>防御性驾驶：</strong>评估整个可行的行为空间，把观测和他人行为的不确定性纳入对未来后果的判断。</p>
+<ul>
+<li><strong>行为空间：</strong>明确当前有哪些可行行为，把这些选择都纳入评估范围。</li>
+<li><strong>观测的不确定性：</strong>例如盲区中可能存在尚未被观测到的车辆或行人，需要考虑它们存在与不存在的可能。</li>
+<li><strong>他人行为的不确定性：</strong>其他车辆可能加塞，也可能不加塞；行人可能突然冲出，也可能停在原地。</li>
+<li><strong>多种未来下的后果：</strong>结合这两类不确定性，推演未来世界的多种可能演进，评估每个可行行为在不同情形下的后果，再决定采取什么行动。</li>
+</ul>
+<h3>这些工作带来了什么成果？</h3>
+<p><strong>技术落地与商业成果：</strong></p>
+<ul>
+<li><strong>技术落地：</strong>2020 年，我们做出了<strong class="accent">国内首个无图智驾系统</strong>，领先行业三年，推动了无图智驾的产业落地。</li>
+<li><strong>商业成果：</strong>拿下中国首个自动驾驶大单——大众 RHP 项目的<strong class="accent">百万级订单</strong>，为公司带来了重要的业务成果。</li>
+</ul>
+</div></details>
+<details class="chapter" id="huawei"><summary><span class="chapter-date">2024—2026</span><span class="chapter-summary">华为车 BU：如何让物理 AI 系统具有 Scaling Law 和安全性？</span><span class="toggle" aria-hidden="true"></span></summary><div class="chapter-body">
+<p><strong>不确定性的数学理解与对应的生成式模型实现。</strong></p>
+<ul>
+<li><strong>超空间（Hyperspace）</strong>：表征世界的全部可能性。我把世界中全部可能的状态与行为视为一个高维空间，模型首先需要具备表征这个空间的能力。</li>
+<li><strong>嵌入空间（Embedding Space）</strong>：在上述空间内学习数据分布，刻画由数据信息所支撑的状态与行为。</li>
+<li><strong>价值对齐（Value Alignment）</strong>：在数据所反映的空间中，根据产品价值与安全目标选择行为。</li>
+</ul>
+<h3>如何让物理 AI 系统具有 Scaling Law？</h3>
+<p><strong>通过生成式预训练（Generative Pretraining），让模型先表征可能性，再学习数据分布。</strong></p>
+<ul>
+<li><strong>模型如何表征世界的全部可能性？</strong><p><strong>用生成式模型（Generative Model）打开表征空间（Representation Space）。</strong></p><p>之前方案的核心问题是<strong>模型的表征能力不足</strong>：大量真实数据中可以做出的行为，也无法被有效表征。因此，首先要突破这一限制，让模型能够表达<strong>Hyperspace</strong>中更丰富的状态与行为。</p></li>
+<li><strong>如何在表征空间内学到数据分布？</strong><p><strong>以交叉熵（Cross-Entropy）为目标进行自监督学习（Self-Supervised Learning）。</strong></p><p>之前方案在同一学习过程中需要监督<strong>多个复杂目标</strong>，学习数据分布与满足其他目标混在一起。我的调整是将<strong>其他目标移到后训练</strong>，让<strong>预训练专注于学习数据分布</strong>，在表征空间内刻画数据所反映的<strong>Embedding Space</strong>。</p></li>
+</ul>
+<p>沿着这条路径，我推动<strong>一段式端到端</strong>，以<strong>数据驱动</strong>替换主链路中的手写规则，<strong>直接输出可用于控车的轨迹</strong>。</p>
+<h3>如何保证安全？</h3>
+<p><strong>通过价值对齐，让模型按产品价值与安全要求选择行为。</strong></p>
+<p>在<strong>后训练中引入产品价值与安全目标</strong>，通过<strong>同策略强化学习（On-Policy Reinforcement Learning）</strong>完成<strong>Alignment</strong>，并结合<strong>风险场（Risk Field）</strong>形成<strong>防御性驾驶</strong>能力。预训练负责学到数据分布，后训练负责在这个基础上学习怎样选择行为。</p>
+<h3>如何保证可靠性？</h3>
+<p><strong>通过系统冗余保障可靠性。</strong></p>
+<p>AI 系统可能失效。面对智能驾驶这样的<strong>复杂系统</strong>，我把<strong>传统规则系统</strong>作为<strong>AI 主系统的旁路冗余</strong>，在<strong>主系统失效时介入</strong>，避免在正常运行时持续干预模型、制约其能力扩展。这也是我面向<strong>L3、L4</strong>推进的<strong>端到端主系统＋规则旁路辅助</strong>架构。</p>
+<h3>这些工作最终带来了什么？</h3>
+<p>端到端方案实现了<strong>更拟人的驾驶体验</strong>，安全性实现<strong>一个数量级的提升</strong>。ADS 4.0 达到<strong class="accent">百万级装车</strong>，用户订阅率<strong class="accent">超过 90%</strong>，平均用户智驾使用里程占比也<strong class="accent">超过 90%</strong>。</p>
+<p>公司也在中国电动汽车百人会论坛上宣布，将<strong>AI 算力投入扩大至原来的五倍</strong>，继续投入这条以数据与计算驱动能力增长的技术路径。</p>
+<div class="references" aria-label="ADS 4 产品背景资料"><a href="https://auto.huawei.com/cn/news/2025/huawei-qiankun-intelligent-technology-launch" target="_blank" rel="noopener noreferrer">ADS 4 官方发布 ↗</a></div>
+</div></details>
+<details class="chapter" id="outlook">
+    <summary>
+      <span class="chapter-date">2026—</span>
+      <span class="chapter-summary" id="outlook-title">下一步：物理 AI 系统如何走入更多真实场景？如何探索未知，打开可能性？</span>
+      <span class="toggle" aria-hidden="true"></span>
+    </summary>
+    <div class="chapter-body">
+      <h3>物理 AI 系统的长期商业价值在哪里？</h3>
+      <p><strong>部署：在真实场景中形成工程积累。这种工程积累无法被体系化知识取代，并将成为 AI 长期依赖的知识与信息库。</strong></p>
+      <h4>AI 为什么不会取代这些工程积累？</h4>
+      <p><strong>智能的本质是能力的泛化，而不是对已有信息的过拟合（overfitting）。</strong></p>
+      <p>真实部署产生大量具体信息：某种零部件在什么条件下失效，哪些组件组合能够稳定工作，某个场景中的问题经过什么调整得到解决。这些信息具有使用价值，但没有必要全部变成模型需要死记硬背的内容。</p>
+      <p>即使 AI 能够通过自主探索重新获得这些信息，也没有必要让每个系统重复经历相同的试错。已有经验可以直接利用，探索则应投入尚未解决的问题。</p>
+      <p><strong>智能在进化中找到的、处理这类信息的最优路径，就是信息检索 + 上下文学习（In-Context Learning）。</strong>检索已有经验，在当前任务中理解和运用，无需把所有信息固化进模型，也无需重复探索。这使真实部署形成的工程积累，成为 AI 长期依赖的外部知识库。</p>
+      <h4>为什么工程积累如此关键？</h4>
+      <p><strong>物理世界中的错误，后果成本极高。</strong></p>
+      <p>一次错误可能意味着设备损坏、生产中断，甚至人身伤害。系统能否长期可靠运行，需要在真实使用中不断发现问题、修正设计、验证改进。</p>
+      <p>以汽车为例，大众、丰田这样的传统车企，长期积累了零部件选型、制造工艺、供应商协同与故障处理经验。这些积累支撑产品的可靠性，也支撑更大规模的生产与销售。丰田的质量体系就持续吸收现场问题、售后反馈与供应商验证，将经验转化为改进。<a class="inline-link" href="https://www.toyota-global.com/company/history_of_toyota/75years/data/company_information/quality/quality_assurance.html" target="_blank" rel="noopener noreferrer">丰田质量体系历史 ↗</a></p>
+      <p>中国新能源汽车的发展，也体现了提前积累的价值。政策支持、持续投入与大规模应用，逐步形成了制造经验、产业协同和供应链优势。后来者即使拥有优秀人才和先进想法，也仍然需要经历实际生产、部署与反馈的过程。<a class="inline-link" href="https://www.iea.org/reports/what-next-for-the-global-car-industry/executive-summary" target="_blank" rel="noopener noreferrer">IEA 汽车产业报告 ↗</a></p>
+      <h3>AI 系统如何自主探索未知，为人类打开可能性？</h3>
+      <p><strong>元能力：</strong>让系统理解自己能够采取哪些行动，以及这些行动对自身认知、能力与不确定性的影响，并据此主动探索和成长。</p>
+      <ul>
+        <li>
+          <p><strong>AI 如何理解已知与未知，并作出不同的应对？</strong></p>
+          <p><strong>元认知：</strong>认识自身知识与能力的边界，区分已有依据的判断与仍缺少信息的问题，让行动与自身的认知和能力相匹配。</p>
+        </li>
+        <li>
+          <p><strong>AI 如何主动改变自身的信息与能力？</strong></p>
+          <p><strong>元行为：</strong>理解行动如何改变自身的信息、能力与不确定性，并据此主动选择行动，获取信息、积累经验、拓展能力。</p>
+        </li>
+        <li>
+          <p><strong>AI 如何持续提升自己应对未知的学习能力？</strong></p>
+          <p><strong>元学习：</strong>利用行动与反馈，持续检验和改进自己的学习方法，使系统面对新的未知时，能够更好地获取信息、更新认知并提升能力。</p>
+        </li>
+        <li>
+          <p><strong>AI 自主探索的信息与价值从哪里来？</strong></p>
+          <p><strong>真实世界：</strong>真实世界既是信息的源泉，也是价值的源泉。系统必须在真实世界中部署，从交互中获得数据与反馈，并在现实需求中找到探索与进化的方向。</p>
+        </li>
+      </ul>
+      <p>我致力于让 AI 在现实场景中自主探索世界的未知，为人类打开无穷的可能性。</p>
+    </div>
+  </details>
+</section>
+<section class="section resume" id="resume" aria-labelledby="resume-title">
+<h2 id="resume-title">详细履历</h2>
+<article class="resume-entry" aria-labelledby="resume-huawei-title">
+<p class="resume-date">2024—2026</p>
+<div class="resume-body">
+<h3 id="resume-huawei-title">华为</h3>
+<p class="resume-role">AI 首席专家 · ADS 4.0 端到端 AI 方案负责人</p>
+<h4>职责范围</h4>
+<ul><li>负责端到端技术方案，统筹多个端到端开发团队，组织技术攻关</li><li>负责 ADS 4.0 方案与 ADS 5.0 技术规划</li><li>负责 SE 专家团队管理及 AI 化培养</li><li>统筹产品开发（N）、技术预研（N+1）与前沿预研（N+2）的技术规划</li></ul>
+<h4>重点工作</h4>
+<ul><li>推动<strong>一段式端到端</strong>方案，以数据驱动替换规则，直接生成可用于控车的轨迹</li><li>通过<strong>风险场建模</strong>与 <strong>on-policy RL</strong>，推进<strong>防御性驾驶</strong></li><li>构建 <strong>L3、L4</strong> 高安全系统架构，以<strong>端到端主系统</strong>与<strong>规则旁路</strong>协同保障安全</li></ul>
+<h4>主要成果</h4>
+<ul class="resume-outcomes"><li>一段式端到端方案达到全球 TOP 2 水平</li><li>ADS 4.0 百万级装车</li><li>用户订阅率 90% 以上</li><li>用户行驶里程中的智驾占比 90% 以上</li></ul>
+</div>
+</article>
+<article class="resume-entry" aria-labelledby="resume-dji-title">
+<p class="resume-date">2016—2024</p>
+<div class="resume-body">
+<h3 id="resume-dji-title">大疆车载</h3>
+<p class="resume-role">大疆车载创始成员</p>
+<h4>职责范围</h4>
+<ul><li>从零创建规控算法部</li><li>从零创建系统部</li><li>构建矩阵式研发体系</li></ul>
+<h4>重点工作</h4>
+<ul><li>主导国内首个<strong>无图智驾系统</strong>的实际部署</li><li>构建应对多种不确定性的<strong>防御性驾驶能力</strong></li><li>构建<strong>能力原子化、接口统一化</strong>的平台系统架构，使能力能够围绕统一接口持续积累</li></ul>
+<h4>主要成果</h4>
+<ul class="resume-outcomes"><li>2020 年落地国内首个无图智驾，领先行业三年</li><li>获得大众 RHP 百万级订单</li><li>获得其他 50 家 OEM 的车型订单</li></ul>
+</div>
+</article>
+<article class="resume-entry" aria-labelledby="resume-hkust-title">
+<p class="resume-date">2014—2016</p>
+<div class="resume-body">
+<h3 id="resume-hkust-title">香港科技大学</h3>
+<p class="resume-role">Robotics Institute · MPhil（全奖硕士）</p>
+<h4>研究方向</h4>
+<ul><li>自主无人机系统</li><li>保障系统在自主运行过程中的安全性与实时性</li></ul>
+<h4>重点工作</h4>
+<ul><li>开创有安全保障的 <strong>corridor-based planning</strong></li><li>开创基于 <strong>Octree</strong> 的实时在线自主建图
+<div class="resume-complexity" aria-label="Octree 查询与更新复杂度">
+<dl>
+<div><dt>体积占据查询 · 复杂度上界</dt><dd><span class="compute-label">CPU</span><span class="equation" role="math" aria-label="O((v_r/V_epsilon)^(2/3))">O((v<sub>r</sub>/V<sub>ε</sub>)<sup>2/3</sup>)</span></dd><dd><span class="compute-label">GPU（充分并行）</span><span class="equation" role="math" aria-label="O(log(v_r/V_epsilon))">O(log(v<sub>r</sub>/V<sub>ε</sub>))</span></dd></div>
+<div><dt>单射线地图更新 · 最坏情况</dt><dd><span class="compute-label">CPU</span><span class="equation" role="math" aria-label="O((L_r/V_epsilon^(1/3)) * log(v_b/V_epsilon))">O((L<sub>r</sub>/V<sub>ε</sub><sup>1/3</sup>) · log(v<sub>b</sub>/V<sub>ε</sub>))</span></dd><dd><span class="compute-label">GPU（充分并行）</span><span class="equation" role="math" aria-label="O(log(v_b/V_epsilon))">O(log(v<sub>b</sub>/V<sub>ε</sub>))</span></dd></div>
+</dl>
+<p class="resume-symbols">v<sub>r</sub> 为查询体积，V<sub>ε</sub> 为最细体素体积，L<sub>r</sub> 为射线长度，v<sub>b</sub> 为射线的轴对齐包围盒体积</p>
+</div>
+</li><li>实现首个在<strong>板载计算设备</strong>上实时运行、具有<strong>安全保障</strong>的<strong>自主飞行系统</strong></li></ul>
+<h4>主要成果</h4>
+<ul class="resume-outcomes"><li>5 篇相关论文</li><li>论文 <a class="resume-paper" href="https://ieeexplore.ieee.org/document/7989419/" target="_blank" rel="noopener noreferrer">Improving Octree-Based Occupancy Maps using Environment Sparsity with Application to Aerial Robot Navigation</a>，入围 ICRA 2017 服务机器人最佳论文奖（finalist）<a class="resume-reference" href="https://ewh.ieee.org/soc/ras/conf/fullysponsored/icra/2017/www.icra2017.org/conference/awards.html" target="_blank" rel="noopener noreferrer">官方名单 ↗</a></li></ul>
+</div>
+</article>
+</section>
+</main><footer><span>陈竞</span><a href="#main">回到顶部 ↑</a><span class="print-domain">chenjing.net</span></footer>
+</div><script src="script.js"></script></body></html>
