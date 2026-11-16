@@ -39,3 +39,5 @@
 @media print{.intro{padding:24px 0}.intro .hero{grid-template-columns:120px minmax(0,1fr);column-gap:32px;margin-bottom:24px;break-inside:avoid}.intro .portrait{width:120px;height:150px}.intro .identity{margin-top:12px}.intro h1{font-size:22px}.intro .personal,.intro .position,.intro .email{font-size:8px}.intro .quote-lead{font-size:10px;margin-bottom:14px}.intro .quote-main{font-size:18px}.intro .quote-block figcaption{font-size:9px;margin-top:14px}.intro-description p,.intro-description p.thesis{font-size:10px;line-height:1.7}}
 
 #outlook .chapter-body h4{font-size:14px;font-weight:600;line-height:1.7;color:var(--ink);margin:25px 0 10px}@media(max-width:500px){#outlook .chapter-body h4{font-size:13px}}@media print{#outlook .chapter-body h4{font-size:10px;break-after:avoid}}
+
+.header{gap:24px}.home{line-height:1.6}.header nav{flex-shrink:0}@media(max-width:500px){.header{gap:18px}.home{max-width:170px}}
