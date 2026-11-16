@@ -78,3 +78,71 @@ html[lang="en"] .intro #name{letter-spacing:0}
 html[lang="en"] .intro .quote-main span{text-wrap:balance}
 
 .chapter-body p.scenario{border-left:2px solid var(--line);padding-left:14px;margin:18px 0;color:var(--body)}@media(max-width:500px){.chapter-body p.scenario{padding-left:11px;margin:16px 0}}
+
+/* Homepage: a narrow portrait column and a continuous introduction column. */
+.header{padding-top:24px}.header nav{margin-top:10px}
+.intro{padding:32px 0 36px}
+.intro .hero{display:grid;grid-template-columns:216px minmax(0,1fr);gap:48px;align-items:start;margin:0}
+.intro .portrait-block{display:block}
+.intro .portrait{grid-column:auto;grid-row:auto;width:216px;height:270px}
+.intro .identity{grid-column:auto;grid-row:auto;margin:18px 0 0;min-width:0}
+.intro #name{font-size:34px;margin-bottom:9px}
+.intro .personal{margin-bottom:8px}
+.intro .position{font-size:13px}
+.intro .profile-tags{margin-top:12px}
+.intro .email{margin-top:12px}
+.intro .hero-content{min-width:0}
+.intro .quote-block{padding:0;margin:0 0 24px}
+.intro .quote-lead{font-size:13px;line-height:1.7;margin:0 0 12px}
+.intro .quote-main{font-size:25px;line-height:1.75;letter-spacing:0;text-wrap:balance}
+.intro .quote-main span{display:block;text-wrap:balance}
+.intro .quote-block figcaption{font-size:11px;line-height:1.6;margin-top:9px}
+.intro-description p,.intro-description p.thesis{font-size:15px;line-height:1.95}
+.intro-description p{margin-bottom:20px}
+html[lang="en"] .intro .quote-main{font-size:25px;line-height:1.6}
+@media(max-width:899px){
+ .intro .hero{grid-template-columns:184px minmax(0,1fr);gap:34px}
+ .intro .portrait{width:184px;height:230px}
+ .intro #name{font-size:32px}
+ .intro .quote-main,html[lang="en"] .intro .quote-main{font-size:23px}
+ .intro-description p,.intro-description p.thesis{font-size:14px}
+}
+@media(max-width:599px){
+ .header{padding-top:22px}
+ .intro{padding:26px 0 28px}
+ .intro .hero{grid-template-columns:minmax(0,1fr);gap:26px}
+ .intro .portrait-block{display:grid;grid-template-columns:112px minmax(0,1fr);gap:22px;align-items:start}
+ .intro .portrait{width:112px;height:140px}
+ .intro .identity{margin:0}
+ .intro #name{font-size:28px;margin-bottom:8px}
+ .intro .personal{font-size:11px;line-height:1.65;margin-bottom:7px}
+ .intro .position{font-size:12px;line-height:1.6}
+ .intro .profile-tags{margin-top:10px}
+ .intro .email{font-size:12px;margin-top:11px}
+ .intro .quote-lead{font-size:12px;margin-bottom:9px}
+ .intro .quote-main{font-size:21px;line-height:1.8}
+ .intro .quote-block figcaption{font-size:11px;margin-top:8px}
+ .intro .quote-block{margin-bottom:22px}
+ html[lang="en"] .intro .quote-main{font-size:21px;line-height:1.7}
+}
+@media(max-width:359px){
+ .intro .portrait-block{grid-template-columns:96px minmax(0,1fr);gap:18px}
+ .intro .portrait{width:96px;height:120px}
+ .intro #name{font-size:26px}
+ .intro .position,.intro .email{font-size:11px}
+}
+@media print{
+ .header{padding-top:0}
+ .intro{padding:20px 0}
+ .intro .hero{grid-template-columns:120px minmax(0,1fr);gap:28px;break-inside:auto}
+ .intro .portrait-block{display:block}
+ .intro .portrait{width:120px;height:150px}
+ .intro .identity{margin-top:12px}
+ .intro #name{font-size:24px}
+ .intro .personal,.intro .position,.intro .email{font-size:8px}
+ .intro .quote-lead{font-size:9px;margin-bottom:8px}
+ .intro .quote-main,html[lang="en"] .intro .quote-main{font-size:16px}
+ .intro .quote-block figcaption{font-size:8px}
+ .intro .quote-block{margin-bottom:16px}
+ .intro-description p,.intro-description p.thesis{font-size:10px;line-height:1.7}
+}
