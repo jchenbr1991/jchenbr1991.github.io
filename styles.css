@@ -18,7 +18,7 @@
 .intro .portrait-block,.intro .quote-block{margin:0;min-width:0}
 .intro .portrait{width:248px;height:310px;max-width:100%;object-position:50% 50%}
 .intro .identity{margin-top:20px}
-.intro h1{font-family:"Songti SC","Noto Serif CJK SC",serif;font-size:36px;line-height:1.25;letter-spacing:3px;margin:0 0 9px}
+.intro #name{font-family:"Songti SC","Noto Serif CJK SC",serif;font-size:36px;line-height:1.25;letter-spacing:3px;margin:0 0 9px}
 .intro .personal{font-size:12px;line-height:1.7;margin:0 0 9px;color:var(--muted)}
 .intro .position{font-size:13px;line-height:1.7;letter-spacing:.015em;margin:0}
 .intro .email{font-size:13px;line-height:1.7;margin:7px 0 0;overflow-wrap:anywhere}
@@ -33,11 +33,20 @@
 .intro-description p{font-size:16px;line-height:1.95;margin:0 0 24px}
 .intro-description p.thesis{font-size:16px;line-height:1.95;color:var(--ink);margin:0}
 .journey .section-heading{margin-bottom:15px}
-@media(max-width:899px){.intro .hero{grid-template-columns:192px minmax(0,1fr);column-gap:40px}.intro .portrait{width:192px;height:240px}.intro .quote-main{font-size:25px}.intro .quote-lead{font-size:14px;margin-bottom:20px}.intro .quote-block figcaption{margin-top:20px}.intro h1{font-size:32px}}
-@media(max-width:599px){.intro{padding:32px 0 30px}.intro .hero{grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:start;margin-bottom:30px}.intro .portrait{width:120px;height:150px}.intro .identity{margin-top:16px}.intro h1{font-size:28px;letter-spacing:2px;margin-bottom:8px}.intro .personal{font-size:11px}.intro .position,.intro .email{font-size:11px;line-height:1.65}.intro .quote-block{padding:0}.intro .quote-lead{font-size:12px;line-height:1.8;margin-bottom:16px}.intro .quote-main{font-size:20px;line-height:1.9;letter-spacing:0}.intro .quote-block figcaption{font-size:12px;margin-top:18px}.intro-description p,.intro-description p.thesis{font-size:14px;line-height:1.95}.intro-description p{margin-bottom:20px}}
+@media(max-width:899px){.intro .hero{grid-template-columns:192px minmax(0,1fr);column-gap:40px}.intro .portrait{width:192px;height:240px}.intro .quote-main{font-size:25px}.intro .quote-lead{font-size:14px;margin-bottom:20px}.intro .quote-block figcaption{margin-top:20px}.intro #name{font-size:32px}}
+@media(max-width:599px){.intro{padding:32px 0 30px}.intro .hero{grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:start;margin-bottom:30px}.intro .portrait{width:120px;height:150px}.intro .identity{margin-top:16px}.intro #name{font-size:28px;letter-spacing:2px;margin-bottom:8px}.intro .personal{font-size:11px}.intro .position,.intro .email{font-size:11px;line-height:1.65}.intro .quote-block{padding:0}.intro .quote-lead{font-size:12px;line-height:1.8;margin-bottom:16px}.intro .quote-main{font-size:20px;line-height:1.9;letter-spacing:0}.intro .quote-block figcaption{font-size:12px;margin-top:18px}.intro-description p,.intro-description p.thesis{font-size:14px;line-height:1.95}.intro-description p{margin-bottom:20px}}
 @media(max-width:359px){.intro .hero{grid-template-columns:100px minmax(0,1fr);gap:20px}.intro .portrait{width:100px;height:125px}.intro .quote-main{font-size:18px}}
-@media print{.intro{padding:24px 0}.intro .hero{grid-template-columns:120px minmax(0,1fr);column-gap:32px;margin-bottom:24px;break-inside:avoid}.intro .portrait{width:120px;height:150px}.intro .identity{margin-top:12px}.intro h1{font-size:22px}.intro .personal,.intro .position,.intro .email{font-size:8px}.intro .quote-lead{font-size:10px;margin-bottom:14px}.intro .quote-main{font-size:18px}.intro .quote-block figcaption{font-size:9px;margin-top:14px}.intro-description p,.intro-description p.thesis{font-size:10px;line-height:1.7}}
+@media print{.intro{padding:24px 0}.intro .hero{grid-template-columns:120px minmax(0,1fr);column-gap:32px;margin-bottom:24px;break-inside:avoid}.intro .portrait{width:120px;height:150px}.intro .identity{margin-top:12px}.intro #name{font-size:22px}.intro .personal,.intro .position,.intro .email{font-size:8px}.intro .quote-lead{font-size:10px;margin-bottom:14px}.intro .quote-main{font-size:18px}.intro .quote-block figcaption{font-size:9px;margin-top:14px}.intro-description p,.intro-description p.thesis{font-size:10px;line-height:1.7}}
 
 #outlook .chapter-body h4{font-size:14px;font-weight:600;line-height:1.7;color:var(--ink);margin:25px 0 10px}@media(max-width:500px){#outlook .chapter-body h4{font-size:13px}}@media print{#outlook .chapter-body h4{font-size:10px;break-after:avoid}}
 
 .header{gap:24px}.home{line-height:1.6}.header nav{flex-shrink:0}@media(max-width:500px){.header{gap:18px}.home{max-width:170px}}
+
+/* The personal motto is the first, full-width page heading. */
+.header{display:block;height:auto;padding:30px 0 18px}
+.page-title{font-size:38px;font-weight:500;line-height:1.25;letter-spacing:-.025em;margin:0}
+.header .home{display:block;max-width:none;font-size:inherit;line-height:inherit;letter-spacing:inherit;color:var(--ink)}
+.header nav{justify-content:flex-end;margin-top:14px;font-size:12px}
+@media(max-width:760px){.header{padding:28px 0 16px}.page-title{font-size:34px}}
+@media(max-width:500px){.header{padding:25px 0 16px}.page-title{font-size:30px;line-height:1.25}.header nav{font-size:11px;margin-top:16px}}
+@media print{.header{padding:0 0 15px;height:auto}.page-title{font-size:22px}}
